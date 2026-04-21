@@ -41,8 +41,11 @@ pipeline {
   }
 
   post {
+    always {
+      archiveArtifacts artifacts: 'backend/backend.log,backend/logs/*.log', allowEmptyArchive: true
+    }
     failure {
-      echo 'Pipeline failed. Check backend.log and stage output for root cause.'
+      echo 'Pipeline failed. Check archived logs and stage output.'
     }
   }
 }
