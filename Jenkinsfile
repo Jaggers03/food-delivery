@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     NODE_ENV = 'test'
-    PORT = '5001'
+    PORT = '58001'
     MONGO_URI = 'mongodb://127.0.0.1:27017/fooddelivery_ci'
     JWT_SECRET = 'ci-secret'
     PATH = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
