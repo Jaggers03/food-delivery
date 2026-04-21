@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "logs:tail": "tail -f logs/access.log logs/error.log"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
